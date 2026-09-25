@@ -1,10 +1,6 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=E0B85E&center=true&vCenter=true&width=450&lines=Ahmet+Emir+%C5%9Eim%C5%9Fek;42+Istanbul;Common+Core" alt="Typing SVG" />
-
-<br/><br/>
-
-<img src="https://raw.githubusercontent.com/SS2Genji/SS2Genji/main/assets/bonfire_banner.svg" alt="Rest Here, Weary Developer" width="100%" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=E0B85E&center=true&vCenter=true&width=450&lines=Ahmet+Emir+%C5%9Eim%C5%9Fek" alt="Typing SVG" />
 
 </div>
 
