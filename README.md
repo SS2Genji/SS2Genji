@@ -4,7 +4,7 @@
 
 <br/><br/>
 
-<img src="assets/bonfire_banner.svg" alt="Rest Here, Weary Developer" width="100%" />
+<img src="https://raw.githubusercontent.com/SS2Genji/SS2Genji/main/assets/bonfire_banner.svg" alt="Rest Here, Weary Developer" width="100%" />
 
 </div>
 
@@ -18,7 +18,7 @@ Currently building my software foundation at 42 Istanbul. Applying the algorithm
 
 <div align="center">
 
-<img src="assets/terminal.svg" alt="Live Terminal Session" width="100%" />
+<img src="https://raw.githubusercontent.com/SS2Genji/SS2Genji/main/assets/terminal.svg" alt="Live Terminal Session" width="100%" />
 
 </div>
 
