@@ -1,9 +1,5 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=E0B85E&center=true&vCenter=true&width=450&lines=Ahmet+Emir+%C5%9Eim%C5%9Fek" alt="Typing SVG" />
-
-<br/>
-
 <img src="https://raw.githubusercontent.com/SS2Genji/SS2Genji/main/assets/boss_bar.svg" alt="42 Milestone Boss Bar" width="100%" />
 
 </div>
