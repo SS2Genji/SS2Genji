@@ -8,221 +8,317 @@
         letter-spacing: 1.5px;
       }
 
-      /* ================= MILESTONE 1 ANIMATIONS ================= */
-      .m1-box {
-        animation: m1Life 12s infinite;
+      /* =================== MILESTONE 1 (3 BARS, 3 HITS, DEAD) =================== */
+      .m1-layer {
+        animation: m1Life 14s infinite;
       }
       @keyframes m1Life {
-        0%, 25% { opacity: 1; transform: translateY(0); }
-        30% { opacity: 0; transform: translateY(-4px); }
-        31%, 97% { opacity: 0; }
-        99%, 100% { opacity: 1; transform: translateY(0); }
+        0%, 36% { opacity: 1; transform: translateY(0); }
+        39% { opacity: 0; transform: translateY(-4px); }
+        40%, 98% { opacity: 0; }
+        100% { opacity: 1; transform: translateY(0); }
       }
 
-      /* M1 Final Hit Shake */
+      /* M1 Shake on 3 hits */
       .m1-shake {
-        animation: m1Shake 12s infinite;
+        animation: m1ShakeAnim 14s infinite;
       }
-      @keyframes m1Shake {
-        0%, 11% { transform: translate(0, 0); }
-        12% { transform: translate(-3px, 2px); }
-        13% { transform: translate(3px, -2px); }
-        14% { transform: translate(-2px, 1px); }
-        15%, 100% { transform: translate(0, 0); }
+      @keyframes m1ShakeAnim {
+        0%, 5.5% { transform: translate(0, 0); }
+        5.6% { transform: translate(-2px, 2px); }
+        6.4% { transform: translate(2px, -2px); }
+        7.2% { transform: translate(0, 0); }
+
+        12.7% { transform: translate(0, 0); }
+        12.8% { transform: translate(-2px, 2px); }
+        13.6% { transform: translate(2px, -2px); }
+        14.4% { transform: translate(0, 0); }
+
+        19.9% { transform: translate(0, 0); }
+        20.0% { transform: translate(-3px, 3px); }
+        20.8% { transform: translate(3px, -3px); }
+        21.6% { transform: translate(0, 0); }
+        100% { transform: translate(0, 0); }
       }
 
-      /* M1 HP Bar: Starts at 160px, drops to 0 on hit */
-      .m1-hp {
-        animation: m1Drain 12s infinite;
+      /* M1 Bar 1 (dies at hit 1: t=0.8s ~ 5.7%) */
+      .m1-bar-1 {
+        animation: m1Drain1 14s infinite;
       }
-      @keyframes m1Drain {
-        0%, 11% { width: 160px; }
-        14%, 30% { width: 0px; }
-        31%, 97% { width: 160px; }
-        100% { width: 160px; }
+      @keyframes m1Drain1 {
+        0%, 5.6% { width: 154px; }
+        7.0%, 39% { width: 0px; }
+        40%, 98% { width: 154px; }
+        100% { width: 154px; }
+      }
+
+      /* M1 Bar 2 (dies at hit 2: t=1.8s ~ 12.8%) */
+      .m1-bar-2 {
+        animation: m1Drain2 14s infinite;
+      }
+      @keyframes m1Drain2 {
+        0%, 12.7% { width: 154px; }
+        14.1%, 39% { width: 0px; }
+        40%, 98% { width: 154px; }
+        100% { width: 154px; }
+      }
+
+      /* M1 Bar 3 (dies at hit 3: t=2.8s ~ 20%) */
+      .m1-bar-3 {
+        animation: m1Drain3 14s infinite;
+      }
+      @keyframes m1Drain3 {
+        0%, 19.9% { width: 154px; }
+        21.3%, 39% { width: 0px; }
+        40%, 98% { width: 154px; }
+        100% { width: 154px; }
+      }
+
+      /* Slashes on M1 */
+      .slash-1 {
+        opacity: 0;
+        animation: slash1Anim 14s infinite;
+      }
+      @keyframes slash1Anim {
+        5.6% { opacity: 0; }
+        5.8% { opacity: 1; }
+        6.6% { opacity: 0; }
+      }
+
+      .slash-2 {
+        opacity: 0;
+        animation: slash2Anim 14s infinite;
+      }
+      @keyframes slash2Anim {
+        12.8% { opacity: 0; }
+        13.0% { opacity: 1; }
+        13.8% { opacity: 0; }
+      }
+
+      .slash-3 {
+        opacity: 0;
+        animation: slash3Anim 14s infinite;
+      }
+      @keyframes slash3Anim {
+        20.0% { opacity: 0; }
+        20.2% { opacity: 1; }
+        21.0% { opacity: 0; }
       }
 
       /* M1 Felled Text */
-      .felled-text {
+      .m1-felled {
         opacity: 0;
-        animation: m1Felled 12s infinite;
+        animation: m1FelledAnim 14s infinite;
         font-family: 'Courier New', monospace;
-        font-size: 12px;
+        font-size: 13px;
         font-weight: 900;
         fill: #f59e0b;
-        letter-spacing: 3px;
+        letter-spacing: 4px;
       }
-      @keyframes m1Felled {
-        0%, 13% { opacity: 0; }
-        15%, 26% { opacity: 1; }
-        29%, 100% { opacity: 0; }
+      @keyframes m1FelledAnim {
+        0%, 22% { opacity: 0; }
+        23.5%, 36% { opacity: 1; }
+        38%, 100% { opacity: 0; }
       }
 
-      /* ================= MILESTONE 2 ANIMATIONS ================= */
-      .m2-box {
+      /* =================== MILESTONE 2 (5 BARS, 1 HIT, HOLDS) =================== */
+      .m2-layer {
         opacity: 0;
-        animation: m2Life 12s infinite;
+        animation: m2Life 14s infinite;
       }
       @keyframes m2Life {
-        0%, 30% { opacity: 0; transform: translateY(4px); }
-        34%, 93% { opacity: 1; transform: translateY(0); }
+        0%, 39% { opacity: 0; transform: translateY(4px); }
+        42%, 94% { opacity: 1; transform: translateY(0); }
         97%, 100% { opacity: 0; }
       }
 
-      /* M2 HP Fill then Hit */
-      .m2-hp-fill {
-        animation: m2HpAction 12s infinite;
+      /* M2 Bar 1 fills then gets hit at t=7.5s ~ 53.5% */
+      .m2-bar-1 {
+        animation: m2Bar1Drain 14s infinite;
       }
-      @keyframes m2HpAction {
-        0%, 32% { width: 0px; }
-        40%, 54% { width: 500px; } /* fills to 100% */
-        56%, 93% { width: 380px; } /* struck once, stays at ~76%! */
-        97%, 100% { width: 0px; }
-      }
-
-      /* M2 Yellow damage buffer */
-      .m2-yellow-hp {
-        animation: m2YellowAction 12s infinite;
-      }
-      @keyframes m2YellowAction {
-        0%, 32% { width: 0px; }
-        40%, 56% { width: 500px; }
-        66%, 93% { width: 380px; } /* drains to 76% and stays! */
-        97%, 100% { width: 0px; }
+      @keyframes m2Bar1Drain {
+        0%, 41% { width: 0px; }
+        46%, 53.4% { width: 91px; } /* fills */
+        55.0%, 95% { width: 0px; }  /* struck to 0! */
+        98%, 100% { width: 0px; }
       }
 
-      /* M2 Slash Effect */
-      .m2-slash {
+      /* M2 Bars 2, 3, 4, 5 fill and STAY FULL */
+      .m2-bar-alive {
+        animation: m2BarAliveAnim 14s infinite;
+      }
+      @keyframes m2BarAliveAnim {
+        0%, 41% { width: 0px; }
+        46%, 95% { width: 91px; } /* fills and stays! */
+        98%, 100% { width: 0px; }
+      }
+
+      /* M2 Slash 1 */
+      .m2-slash-1 {
         opacity: 0;
-        animation: m2Slash 12s infinite;
+        animation: m2SlashAnim 14s infinite;
       }
-      @keyframes m2Slash {
-        0%, 53% { opacity: 0; }
-        54% { opacity: 1; }
-        56% { opacity: 0; }
-        100% { opacity: 0; }
+      @keyframes m2SlashAnim {
+        53.4% { opacity: 0; }
+        53.6% { opacity: 1; }
+        54.4% { opacity: 0; }
       }
 
-      /* M2 Hit Shake */
+      /* M2 Shake on hit */
       .m2-shake {
-        animation: m2Shake 12s infinite;
+        animation: m2ShakeAnim 14s infinite;
       }
-      @keyframes m2Shake {
-        0%, 53% { transform: translate(0, 0); }
-        54% { transform: translate(-3px, 2px); }
-        55% { transform: translate(3px, -2px); }
-        56% { transform: translate(-2px, 1px); }
-        57%, 100% { transform: translate(0, 0); }
+      @keyframes m2ShakeAnim {
+        0%, 53.3% { transform: translate(0, 0); }
+        53.4% { transform: translate(-2px, 2px); }
+        54.2% { transform: translate(2px, -2px); }
+        55.0% { transform: translate(0, 0); }
+        100% { transform: translate(0, 0); }
       }
 
       /* M2 Damage pop-up */
-      .m2-dmg {
+      .m2-dmg-pop {
         opacity: 0;
-        animation: m2Dmg 12s infinite;
+        animation: m2DmgAnim 14s infinite;
         font-family: 'Courier New', monospace;
         font-size: 11px;
         font-weight: 900;
         fill: #facc15;
       }
-      @keyframes m2Dmg {
-        0%, 54% { opacity: 0; transform: translateY(0); }
-        56% { opacity: 1; transform: translateY(-3px); }
-        68% { opacity: 1; transform: translateY(-14px); }
-        76%, 100% { opacity: 0; transform: translateY(-20px); }
+      @keyframes m2DmgAnim {
+        0%, 53.4% { opacity: 0; transform: translateY(0); }
+        54.0% { opacity: 1; transform: translateY(-3px); }
+        64.0% { opacity: 1; transform: translateY(-13px); }
+        72.0%, 100% { opacity: 0; transform: translateY(-18px); }
       }
 
-      /* Pulse on living M2 bar */
-      .pulse-bar {
-        animation: pulseBar 2s infinite alternate;
+      .pulse-red {
+        animation: pulseRed 2s infinite alternate;
       }
-      @keyframes pulseBar {
+      @keyframes pulseRed {
         0% { fill: #dc2626; }
         100% { fill: #ef4444; }
       }
     ]]></style>
   </defs>
 
-  <!-- ================= 1. SAHNE: MILESTONE 1 (ÖLDÜRÜLÜŞ) ================= -->
-  <g class="m1-box">
+  <!-- ================= 1. SAHNE: MILESTONE 1 (3 BAR, 3 VURUŞ, FELLED) ================= -->
+  <g class="m1-layer">
     <g class="m1-shake">
-      <!-- M1 Header -->
-      <g transform="translate(100, 22)">
+      <!-- M1 Header: ONLY MILESTONE 1 -->
+      <g transform="translate(110, 22)">
         <rect x="0" y="2" width="12" height="10" fill="#991b1b" />
         <rect x="2" y="0" width="8" height="14" fill="#991b1b" />
         <rect x="3" y="4" width="2" height="3" fill="#0d1117" />
         <rect x="7" y="4" width="2" height="3" fill="#0d1117" />
         <rect x="5" y="9" width="2" height="2" fill="#0d1117" />
 
-        <text x="22" y="11" fill="#f8fafc" class="pixel-txt">MILESTONE 1: CIRCLE 01</text>
-        <text x="380" y="11" fill="#f59e0b" class="pixel-txt">[FELLED]</text>
+        <text x="22" y="11" fill="#f8fafc" class="pixel-txt">MILESTONE 1</text>
+        <text x="390" y="11" fill="#f59e0b" class="pixel-txt">[FELLED]</text>
       </g>
 
-      <!-- M1 Health Bar Frame -->
-      <g transform="translate(100, 36)">
-        <rect x="-3" y="-3" width="506" height="22" fill="#78350f" />
-        <rect x="-2" y="-2" width="504" height="20" fill="#d97706" />
-        <rect x="-1" y="-1" width="502" height="18" fill="#1e1b18" />
+      <!-- 3 Segments Container -->
+      <g transform="translate(110, 36)">
+        <!-- Bar 1 (0 to 154) -->
+        <g transform="translate(0, 0)">
+          <rect x="-2" y="-2" width="158" height="20" fill="#78350f" />
+          <rect x="-1" y="-1" width="156" height="18" fill="#d97706" />
+          <rect x="0" y="0" width="154" height="16" fill="#200606" />
+          <rect x="0" y="0" width="154" height="16" fill="#dc2626" class="m1-bar-1" />
+          <polygon points="60,-8 95,24 80,24 45,-8" fill="#ffffff" class="slash-1" />
+        </g>
 
-        <!-- Empty Bar Background -->
-        <rect x="0" y="0" width="500" height="16" fill="#200606" />
+        <!-- Bar 2 (163 to 317) -->
+        <g transform="translate(163, 0)">
+          <rect x="-2" y="-2" width="158" height="20" fill="#78350f" />
+          <rect x="-1" y="-1" width="156" height="18" fill="#d97706" />
+          <rect x="0" y="0" width="154" height="16" fill="#200606" />
+          <rect x="0" y="0" width="154" height="16" fill="#dc2626" class="m1-bar-2" />
+          <polygon points="60,-8 95,24 80,24 45,-8" fill="#ffffff" class="slash-2" />
+        </g>
 
-        <!-- Dying Red Bar -->
-        <rect x="0" y="0" width="160" height="16" fill="#dc2626" class="m1-hp" />
+        <!-- Bar 3 (326 to 480) -->
+        <g transform="translate(326, 0)">
+          <rect x="-2" y="-2" width="158" height="20" fill="#78350f" />
+          <rect x="-1" y="-1" width="156" height="18" fill="#d97706" />
+          <rect x="0" y="0" width="154" height="16" fill="#200606" />
+          <rect x="0" y="0" width="154" height="16" fill="#dc2626" class="m1-bar-3" />
+          <polygon points="60,-8 95,24 80,24 45,-8" fill="#ffffff" class="slash-3" />
+        </g>
 
-        <!-- Final Slash -->
-        <polygon points="120,-8 160,24 145,24 105,-8" fill="#ffffff" class="m2-slash" style="animation-name: m1Shake;" />
+        <!-- Underneath Poise Bars -->
+        <rect x="0" y="19" width="480" height="3" fill="#1c1917" />
       </g>
 
-      <!-- Felled Text Banner in Middle -->
-      <text x="260" y="48" class="felled-text">GREAT ENEMY FELLED</text>
+      <!-- Felled Text Overlay -->
+      <text x="250" y="49" class="m1-felled">GREAT ENEMY FELLED</text>
     </g>
   </g>
 
-  <!-- ================= 2. SAHNE: MILESTONE 2 (ÇIKIŞ + 1 VURUŞ + DURMA) ================= -->
-  <g class="m2-box">
+  <!-- ================= 2. SAHNE: MILESTONE 2 (5 BAR, 1 VURUŞ, DURUR) ================= -->
+  <g class="m2-layer">
     <g class="m2-shake">
-      <!-- M2 Header -->
-      <g transform="translate(100, 22)">
-        <!-- Pixel Swords Emblem -->
+      <!-- M2 Header: ONLY MILESTONE 2 -->
+      <g transform="translate(110, 22)">
         <rect x="0" y="0" width="4" height="14" fill="#38bdf8" />
         <rect x="10" y="0" width="4" height="14" fill="#38bdf8" />
         <rect x="-2" y="3" width="8" height="3" fill="#cbd5e1" />
         <rect x="8" y="3" width="8" height="3" fill="#cbd5e1" />
 
-        <text x="24" y="11" fill="#f8fafc" class="pixel-txt">MILESTONE 2: CIRCLE 02</text>
+        <text x="24" y="11" fill="#f8fafc" class="pixel-txt">MILESTONE 2</text>
         <text x="350" y="11" fill="#38bdf8" class="pixel-txt">[CURRENT FOE]</text>
       </g>
 
-      <!-- M2 Health Bar Frame -->
-      <g transform="translate(100, 36)">
-        <rect x="-3" y="-3" width="506" height="22" fill="#78350f" />
-        <rect x="-2" y="-2" width="504" height="20" fill="#d97706" />
-        <rect x="-1" y="-1" width="502" height="18" fill="#1e1b18" />
+      <!-- 5 Segments Container (each 91px, gap 6px, total 479px) -->
+      <g transform="translate(110, 36)">
+        <!-- Bar 1 (0 to 91) -> Gets struck to 0! -->
+        <g transform="translate(0, 0)">
+          <rect x="-2" y="-2" width="95" height="20" fill="#78350f" />
+          <rect x="-1" y="-1" width="93" height="18" fill="#d97706" />
+          <rect x="0" y="0" width="91" height="16" fill="#360a0a" />
+          <rect x="0" y="0" width="91" height="16" fill="#dc2626" class="m2-bar-1" />
+          <polygon points="35,-8 70,24 55,24 20,-8" fill="#ffffff" class="m2-slash-1" />
+        </g>
 
-        <!-- Empty Bar Background -->
-        <rect x="0" y="0" width="500" height="16" fill="#360a0a" />
+        <!-- Bar 2 (97 to 188) -> Alive! -->
+        <g transform="translate(97, 0)">
+          <rect x="-2" y="-2" width="95" height="20" fill="#78350f" />
+          <rect x="-1" y="-1" width="93" height="18" fill="#d97706" />
+          <rect x="0" y="0" width="91" height="16" fill="#360a0a" />
+          <rect x="0" y="0" width="91" height="16" class="m2-bar-alive pulse-red" />
+        </g>
 
-        <!-- Yellow Damage Buffer Bar -->
-        <rect x="0" y="0" width="500" height="16" fill="#ca8a04" class="m2-yellow-hp" />
+        <!-- Bar 3 (194 to 285) -> Alive! -->
+        <g transform="translate(194, 0)">
+          <rect x="-2" y="-2" width="95" height="20" fill="#78350f" />
+          <rect x="-1" y="-1" width="93" height="18" fill="#d97706" />
+          <rect x="0" y="0" width="91" height="16" fill="#360a0a" />
+          <rect x="0" y="0" width="91" height="16" class="m2-bar-alive pulse-red" />
+        </g>
 
-        <!-- Red Active Bar (fills to 100%, struck once to 76%, stays!) -->
-        <rect x="0" y="0" width="500" height="16" class="m2-hp-fill pulse-bar" />
+        <!-- Bar 4 (291 to 382) -> Alive! -->
+        <g transform="translate(291, 0)">
+          <rect x="-2" y="-2" width="95" height="20" fill="#78350f" />
+          <rect x="-1" y="-1" width="93" height="18" fill="#d97706" />
+          <rect x="0" y="0" width="91" height="16" fill="#360a0a" />
+          <rect x="0" y="0" width="91" height="16" class="m2-bar-alive pulse-red" />
+        </g>
 
-        <!-- Slash FX on Hit -->
-        <polygon points="340,-8 380,24 365,24 325,-8" fill="#ffffff" class="m2-slash" />
+        <!-- Bar 5 (388 to 479) -> Alive! -->
+        <g transform="translate(388, 0)">
+          <rect x="-2" y="-2" width="95" height="20" fill="#78350f" />
+          <rect x="-1" y="-1" width="93" height="18" fill="#d97706" />
+          <rect x="0" y="0" width="91" height="16" fill="#360a0a" />
+          <rect x="0" y="0" width="91" height="16" class="m2-bar-alive pulse-red" />
+        </g>
 
-        <!-- Inner Pixel Dividers -->
-        <line x1="125" y1="0" x2="125" y2="16" stroke="#1e1b18" stroke-width="2" />
-        <line x1="250" y1="0" x2="250" y2="16" stroke="#1e1b18" stroke-width="2" />
-        <line x1="375" y1="0" x2="375" y2="16" stroke="#1e1b18" stroke-width="2" />
-
-        <!-- Stagger / Poise Bar -->
-        <rect x="0" y="18" width="500" height="4" fill="#1c1917" />
-        <rect x="0" y="19" width="380" height="2" fill="#facc15" />
+        <!-- Underneath Poise Bar -->
+        <rect x="0" y="19" width="480" height="3" fill="#1c1917" />
+        <rect x="97" y="19" width="383" height="3" fill="#facc15" />
       </g>
 
-      <!-- Damage Pop-up: -42 HP -->
-      <text x="440" y="30" class="m2-dmg">-42 HP</text>
+      <!-- Damage Pop-up: -1 BAR -->
+      <text x="135" y="30" class="m2-dmg-pop">-1 BAR</text>
     </g>
   </g>
 </svg>
