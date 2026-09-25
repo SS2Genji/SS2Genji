@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 180" width="100%" height="180">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="100%" r="80%">
+      <stop offset="0%" stop-color="#3d2208" />
+      <stop offset="50%" stop-color="#18110a" />
+      <stop offset="100%" stop-color="#090d13" />
+    </radialGradient>
+    <linearGradient id="flameGrad" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#ea580c" />
+      <stop offset="40%" stop-color="#f59e0b" />
+      <stop offset="85%" stop-color="#fef08a" />
+      <stop offset="100%" stop-color="#fef08a" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="swordGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e5e7eb" />
+      <stop offset="100%" stop-color="#4b5563" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <style>
+      .ember { fill: #fef08a; filter: drop-shadow(0 0 4px #f59e0b); }
+      .flame {
+        animation: flicker 1.2s infinite alternate ease-in-out;
+        transform-origin: 400px 115px;
+      }
+      @keyframes flicker {
+        0% { transform: scale(0.96) skewX(-1.5deg); opacity: 0.9; }
+        100% { transform: scale(1.05) skewX(1.5deg); opacity: 1; }
+      }
+      .banner-txt {
+        font-family: 'Cinzel', 'Times New Roman', Georgia, serif;
+        font-size: 14px;
+        letter-spacing: 5px;
+        font-weight: 700;
+        fill: #fef3c7;
+        text-anchor: middle;
+        animation: textPulse 3s infinite alternate ease-in-out;
+      }
+      @keyframes textPulse {
+        0% { fill-opacity: 0.75; filter: drop-shadow(0 0 5px rgba(245, 158, 11, 0.4)); }
+        100% { fill-opacity: 1; filter: drop-shadow(0 0 14px rgba(245, 158, 11, 0.9)); }
+      }
+    </style>
+  </defs>
+
+  <!-- Background Box -->
+  <rect width="800" height="180" rx="8" fill="url(#bgGrad)" stroke="#2d333b" stroke-width="1" />
+
+  <!-- Animated Rising Embers -->
+  <circle cx="385" cy="110" r="2.5" class="ember">
+    <animate attributeName="cy" values="110;20" dur="2.8s" repeatCount="indefinite" />
+    <animate attributeName="cx" values="385;375;390" dur="2.8s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="1;0.8;0" dur="2.8s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="415" cy="115" r="2" class="ember">
+    <animate attributeName="cy" values="115;25" dur="2.2s" begin="0.4s" repeatCount="indefinite" />
+    <animate attributeName="cx" values="415;425;410" dur="2.2s" begin="0.4s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="1;0.7;0" dur="2.2s" begin="0.4s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="400" cy="120" r="3" class="ember">
+    <animate attributeName="cy" values="120;10" dur="3.2s" begin="0.9s" repeatCount="indefinite" />
+    <animate attributeName="cx" values="400;390;415" dur="3.2s" begin="0.9s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="1;0.9;0" dur="3.2s" begin="0.9s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="395" cy="125" r="1.8" class="ember">
+    <animate attributeName="cy" values="125;35" dur="2.5s" begin="1.3s" repeatCount="indefinite" />
+    <animate attributeName="cx" values="395;405;385" dur="2.5s" begin="1.3s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="1;0.6;0" dur="2.5s" begin="1.3s" repeatCount="indefinite" />
+  </circle>
+
+  <!-- Bonfire Flame Core -->
+  <ellipse cx="400" cy="115" rx="30" ry="12" fill="#ea580c" opacity="0.6" filter="url(#glow)" />
+  <path d="M 390 120 C 380 90, 395 65, 400 45 C 405 65, 420 90, 410 120 Z" fill="url(#flameGrad)" class="flame" filter="url(#glow)" />
+
+  <!-- Coiled Sword Plunged in Ground -->
+  <g transform="translate(400, 78) rotate(4)">
+    <!-- Hilt crossguard -->
+    <rect x="-14" y="0" width="28" height="3.5" rx="1" fill="#9ca3af" />
+    <!-- Pommel -->
+    <circle cx="0" cy="-6" r="3" fill="#cbd5e1" />
+    <rect x="-2" y="-6" width="4" height="6" fill="#9ca3af" />
+    <!-- Twisted Blade -->
+    <path d="M -3 3.5 L 3 3.5 L 1.5 55 L -1.5 55 Z" fill="url(#swordGrad)" />
+  </g>
+
+  <!-- Banner Text -->
+  <text x="400" y="152" class="banner-txt">REST HERE, WEARY DEVELOPER</text>
+</svg>
