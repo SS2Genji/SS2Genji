@@ -1,6 +1,6 @@
 <div align="center">
 
-![Boss Bar](https://readme-boss-barr.vercel.app/api?name=STARCOURGE%20RADAHN&bars=10&dmg=3&interval=0.5&theme=purple&shake=heavy&style=souls&felled=DEMIGOD%20FELLED)
+![Boss Bar](https://readme-boss-barr.vercel.app/api?b1=MILESTONE%201:3:3:0.9:1:crimson:heavy:GREAT%20ENEMY%20FELLED:classic&b2=MILESTONE%202:5:1:1:1:purple:medium:GREAT%20ENEMY%20FELLED:classic)
 
 </div>
 
