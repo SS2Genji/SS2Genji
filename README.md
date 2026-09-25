@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/SS2Genji/SS2Genji/main/assets/boss_bar.svg" alt="42 Milestone Boss Bar" width="100%" />
+<img src="![Boss Bar](https://readme-boss-barr.vercel.app/api?name=STARCOURGE%20RADAHN&bars=10&dmg=3&interval=0.5&theme=purple&shake=heavy&style=souls&felled=DEMIGOD%20FELLED)" alt="42 Milestone Boss Bar" width="100%" />
 
 </div>
 
