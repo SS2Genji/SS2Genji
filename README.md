@@ -40,10 +40,10 @@ Software engineering student at 42 Istanbul Common Core. Building on low-level m
 
 ### 42 Cursus: Common Core Projeleri / Systems & Algorithms
 
-- **Circle 00 | [Libft](https://github.com/SS2Genji/Libft):** Temel C standart kütüphanesinin (`libc`) yeniden yazımı. `ft_memmove` çakışma (overlap) koruması, `ft_calloc` tamsayı taşma kontrolü, `ft_split` çoklu bellek geri alma mimarisi ve tekil bağlı liste veri yapılarını içerir.
-- **Circle 01 | [ft_printf](https://github.com/SS2Genji/Printf):** Standart `printf(3)` fonksiyonunun variadic argüman mekanizması (`<stdarg.h>`) ve System V AMD64 ABI kurallarıyla baştan inşası. Dinamik bellek tahsis etmeden taban dönüşümlerini ve `INT_MIN` sınır durumlarını yönetir.
-- **Circle 01 | [get_next_line](https://github.com/SS2Genji/get_next_line):** Dosya tanıtıcılarından (`fd`) satır bazlı akış okuyan sistem fonksiyonu. Statik bellek segmenti (BSS) ile okuma oturumunu korur, dinamik `BUFFER_SIZE` ile çalışır ve çoklu akışları (multiple file descriptors) destekler.
-- **Circle 01 | [push_swap](https://github.com/SS2Genji/push_swap):** İki yığın üzerinde kısıtlı komut setiyle çalışan adaptif sıralama motoru. Kendall tau düzenlilik metriği ($D(A)$) ile veri entropisini analiz eder; veri dağılımına göre $\mathcal{O}(N \sqrt{N})$ kelebek (butterfly) chunk sort veya bitwise LSD radix sort çalıştırır.
+- **Circle 00 | [Libft](https://github.com/SS2Genji/42-Cursus/tree/main/Circle-00/Libft):** Temel C standart kütüphanesinin (`libc`) yeniden yazımı. `ft_memmove` çakışma (overlap) koruması, `ft_calloc` tamsayı taşma kontrolü, `ft_split` çoklu bellek geri alma mimarisi ve tekil bağlı liste veri yapılarını içerir.
+- **Circle 01 | [ft_printf](https://github.com/SS2Genji/42-Cursus/tree/main/Circle-01/ft_printf):** Standart `printf(3)` fonksiyonunun variadic argüman mekanizması (`<stdarg.h>`) ve System V AMD64 ABI kurallarıyla baştan inşası. Dinamik bellek tahsis etmeden taban dönüşümlerini ve `INT_MIN` sınır durumlarını yönetir.
+- **Circle 01 | [get_next_line](https://github.com/SS2Genji/42-Cursus/tree/main/Circle-01/get_next_line):** Dosya tanıtıcılarından (`fd`) satır bazlı akış okuyan sistem fonksiyonu. Statik bellek segmenti (BSS) ile okuma oturumunu korur, dinamik `BUFFER_SIZE` ile çalışır ve çoklu akışları (multiple file descriptors) destekler.
+- **Circle 01 | [push_swap](https://github.com/SS2Genji/42-Cursus/tree/main/Circle-01/push_swap):** İki yığın üzerinde kısıtlı komut setiyle çalışan adaptif sıralama motoru. Kendall tau düzenlilik metriği ($D(A)$) ile veri entropisini analiz eder; veri dağılımına göre $\mathcal{O}(N \sqrt{N})$ kelebek (butterfly) chunk sort veya bitwise LSD radix sort çalıştırır.
 
 ---
 
