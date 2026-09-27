@@ -8,7 +8,7 @@
 
 Yazılım yolculuğuma 42 İstanbul'da devam ediyorum. C diliyle bellek yönetimi, algoritmik problem çözme ve sistem temelleri üzerine edindiğim tecrübeyi, şu sıralar Python ekosisteminde yeni projeler geliştirerek genişletiyorum.
 
-I am currently continuing my software development journey at 42 İstanbul. Building on a solid foundation in C programming—focused on low-level memory management, algorithmic problem-solving, and system fundamentals—I am now expanding my skill set by developing new projects within the Python ecosystem.
+I am currently continuing my software development journey at 42 İstanbul. Building on a solid foundation in C programming, focused on low-level memory management, algorithmic problem-solving, and system fundamentals. I am now expanding my skill set by developing new projects within the Python ecosystem.
 
 ---
 
