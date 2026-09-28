@@ -101,14 +101,14 @@
   <!-- Output Block (Arch Logo + User Specs) -->
   <g class="output-group mono">
     <!-- Arch Linux Logo (Left) -->
-    <g class="arch-logo">
-      <text x="35" y="112">        /\</text>
-      <text x="35" y="132">       /  \</text>
-      <text x="35" y="152">      /\   \</text>
-      <text x="35" y="172">     /      \</text>
-      <text x="35" y="192">    /   ,,   \</text>
-      <text x="35" y="212">   /   |  |  -\</text>
-      <text x="35" y="232">  /_-''    ''-_\</text>
+    <g class="arch-logo" xml:space="preserve">
+      <text x="35" y="112" xml:space="preserve">      /\</text>
+      <text x="35" y="132" xml:space="preserve">     /  \</text>
+      <text x="35" y="152" xml:space="preserve">    /    \</text>
+      <text x="35" y="172" xml:space="preserve">   /      \</text>
+      <text x="35" y="192" xml:space="preserve">  /   ,,   \</text>
+      <text x="35" y="212" xml:space="preserve"> /   |  |   \</text>
+      <text x="35" y="232" xml:space="preserve">/_-''    ''-_\</text>
     </g>
 
     <!-- Specs (Right) -->
@@ -119,11 +119,11 @@
       <text x="0" y="136" class="label">Academy:</text>
       <text x="90" y="136" class="val">42 Istanbul</text>
 
-      <text x="0" y="160" class="label">OS:</text>
-      <text x="90" y="160" class="val">Arch Linux x86_64</text>
+      <text x="0" y="160" class="label">Focus:</text>
+      <text x="90" y="160" class="val">C, Algorithms, Python</text>
 
-      <text x="0" y="184" class="label">Focus:</text>
-      <text x="90" y="184" class="val">C, Algorithms, Python</text>
+      <text x="0" y="184" class="label">OS:</text>
+      <text x="90" y="184" class="val">Arch Linux</text>
 
       <text x="0" y="208" class="label">Editor:</text>
       <text x="90" y="208" class="val">Neovim, VSCode</text>
