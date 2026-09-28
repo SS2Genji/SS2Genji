@@ -26,7 +26,7 @@ Software engineering student at 42 Istanbul Common Core. Building on low-level m
   <img src="https://skillicons.dev/icons?i=c,py,bash,linux,git,neovim&theme=dark" />
 </p>
 
-- **Diller / Languages:** C, Python, Shell (Bash)
+- **Diller / Languages:** C, Python
 - **Ortam & Araçlar / Environment & Tools:** Arch Linux, GCC, Make, Valgrind, Neovim, Git, Docker
 
 ---
