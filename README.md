@@ -35,6 +35,8 @@ Software engineering student at 42 Istanbul Common Core. Building on low-level m
 
 - **[readme-boss-bar](https://github.com/SS2Genji/readme-boss-bar)** ([Canlı Stüdyo](https://readme-boss-bar.vercel.app)): GitHub profilleri ve markdown dokümantasyonları için saf SVG tabanlı, sıfır bağımlılıklı animasyonlu boss can barı motoru. Özel hasar aralıkları, ekran sarsıntı fiziği, çoklu faz (multi-phase) boss karşılaşmaları ve hazır temalar sunar.
   *Pure SVG animated boss health bar generator for GitHub READMEs. Zero runtime dependencies, customizable hit intervals, shake physics, multi-phase boss encounters, and preset visual styles.*
+- **[tefas-telegram-alert](https://github.com/SS2Genji/tefas-telegram-alert):** TEFAS yatırım fonlarını her iş günü resmi JSON API üzerinden takip eden, günlük fiyat farkını ve getiri oranını hesaplayıp Telegram'a bildirim gönderen sunucusuz uyarı motoru. Saf Python standart kütüphanesiyle sıfır dış bağımlılık, GitHub Actions cron otomasyonu, çoklu alıcı desteği ve interaktif kurulum sihirbazı sunar.
+  *Automated TEFAS investment fund tracker and Telegram alert engine. Queries official JSON APIs, calculates daily price differences and returns, and delivers scheduled morning notifications. Zero runtime dependencies using pure Python standard library, serverless GitHub Actions cron automation, and multi-recipient dispatch.*
 
 ---
 
